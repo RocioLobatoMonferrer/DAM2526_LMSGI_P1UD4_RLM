@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica 1 - Saludos festivos</title>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Saludos Festivos</h1>
+    </header>
+    <main>
+      <section>
+        <form id="form">
+          <fieldset>
+            <legend>Datos</legend>
+            <legend>¿Cómo te llamas?</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+            <legend>¿Qué edad tienes?</legend>
+            <label for="edad">Edad:</label>
+            <input type="number" min="1" max="999" id="edad" name="edad" required>
+          </fieldset>
+          <input type="submit" value="Saludar" id="botonSaludar">
+        </form>
+        <br><hr>
+        <div id="result"></div>
+      </section>
+    </main>
+</body>
